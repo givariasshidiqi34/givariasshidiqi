@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page Tailwind CSS 4</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <header class="bg-white shadow-sm sticky top-0">
+    <div class="mx-auto flex max-w-6xl flex-col items-start gap-3 px-6 py-4 md:flex-row md:items-center md:justify-between">
+      <a href="#" class="text-xl font-extrabold text-blue-700">KelasWeb</a>
+      <nav class="flex gap-5 text-sm font-semibold text-slate-600">
+        <a href="#fitur" class="hover:text-blue-700">Fitur</a>
+        <a href="#materi" class="hover:text-blue-700">Materi</a>
+        <a href="#daftar" class="hover:text-blue-700">Daftar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="bg-gradient-to-br from-blue-800 to-blue-600 text-white">
+      <div class="mx-auto grid max-w-6xl items-center gap-8 px-6 py-16 lg:grid-cols-2">
+        <div>
+          <p class="text-sm font-bold uppercase tracking-widest text-green-300">Pemrograman Berbasis Web</p>
+          <h1 class="mt-2 text-4xl font-extrabold leading-tight md:text-5xl">Landing page responsif dengan Tailwind CSS 4</h1>
+          <p class="mt-4 max-w-xl text-lg text-blue-100">Utility class langsung di HTML, dengan prefix breakpoint seperti md: dan lg: untuk layout responsif.</p>
+          <a href="#daftar" class="mt-6 inline-block rounded-xl bg-green-500 px-6 py-3 font-bold text-white hover:bg-green-600">Ikuti Praktikum</a>
+        </div>
+        <div class="rounded-3xl bg-white p-6 text-slate-800 shadow-2xl">
+          <h2 class="text-xl font-bold">Kelas Web Dasar</h2>
+          <p class="mt-2 text-slate-600">Satu struktur HTML, tampil baik di mobile, tablet, dan desktop.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="fitur" class="mx-auto max-w-6xl px-6 py-14">
+      <h2 class="mb-8 text-center text-3xl font-bold">Fitur Utama</h2>
+      <div class="grid gap-6 md:grid-cols-3">
+        <article class="rounded-2xl bg-white p-6 shadow">
+          <h3 class="text-lg font-bold text-blue-700">Utility-First</h3>
+          <p class="mt-2 text-slate-600">Gaya disusun dari class kecil seperti p-6, rounded-2xl, dan shadow.</p>
+        </article>
+        <article class="rounded-2xl bg-white p-6 shadow">
+          <h3 class="text-lg font-bold text-blue-700">Responsive Prefix</h3>
+          <p class="mt-2 text-slate-600">Class md:grid-cols-3 aktif mulai lebar 768px (pendekatan mobile-first).</p>
+        </article>
+        <article class="rounded-2xl bg-white p-6 shadow">
+          <h3 class="text-lg font-bold text-blue-700">Tanpa File CSS</h3>
+          <p class="mt-2 text-slate-600">Pada percobaan ini Tailwind dimuat lewat browser build dari CDN.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="materi" class="bg-white">
+      <div class="mx-auto grid max-w-6xl gap-6 px-6 py-14 lg:grid-cols-[320px_1fr]">
+        <aside>
+          <h2 class="text-xl font-bold">Checklist</h2>
+          <ul class="mt-3 list-disc space-y-1 pl-5 text-slate-600">
+            <li>Viewport meta tag</li>
+            <li>Utility class dan prefix breakpoint</li>
+            <li>Uji di responsive mode</li>
+          </ul>
+        </aside>
+        <article>
+          <h2 class="text-xl font-bold">Target Praktikum</h2>
+          <p class="mt-3 text-slate-600">Membuat landing page sederhana dengan Tailwind CSS 4 dan menjelaskan class yang membentuk layout serta breakpoint-nya.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer id="daftar" class="py-8 text-center text-slate-500">&copy; 2026 Kelas Web Dasar &ndash; Tailwind CSS 4</footer>
+</body>
+</html>
